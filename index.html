@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏎️ CAR RACING GAME 🏎️</h1>
+        
+        <div class="stats-board">
+            <div class="stat">
+                <label>Score:</label>
+                <span id="score">0</span>
+            </div>
+            <div class="stat">
+                <label>Level:</label>
+                <span id="level">1</span>
+            </div>
+            <div class="stat">
+                <label>Lives:</label>
+                <span id="lives">3</span>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="600"></canvas>
+        </div>
+        
+        <div class="status-message" id="gameStatus">Ready to play! Click START GAME</div>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn btn-start">START GAME</button>
+            <button id="pauseBtn" class="btn btn-pause" disabled>PAUSE</button>
+            <button id="resetBtn" class="btn btn-reset">RESET</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>📖 How to Play:</h3>
+            <ul>
+                <li><strong>Arrow Keys</strong> or <strong>A/D</strong> to move left/right</li>
+                <li><strong>Avoid Red Cars</strong> - collision costs 1 life</li>
+                <li><strong>Collect Yellow Coins</strong> - each coin gives 50 points</li>
+                <li><strong>Avoid Enemy Cars</strong> - game gets harder each level</li>
+                <li><strong>3 Lives</strong> - game ends when lives reach 0</li>
+                <li>Dodge enemy cars and collect coins to score points!</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
