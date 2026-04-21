@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #todo-input { width: 300px; }
+        #todos { margin-top: 20px; }
+        .todo-item { display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <input type="text" id="todo-input" placeholder="Add a new todo...">
+    <button id="add-todo">Add Todo</button>
+    <div>
+        <button id="filter-all">All</button>
+        <button id="filter-active">Active</button>
+        <button id="filter-completed">Completed</button>
+    </div>
+    <div id="stats">
+        <p>Total: <span id="total-count">0</span>, Completed: <span id="completed-count">0</span></p>
+    </div>
+    <div id="todos">
+        <p id="empty-state">Your todo list is empty.</p>
+    </div>
+    <script>
+        // JavaScript functionality will go here
+    </script>
+</body>
+</html>
